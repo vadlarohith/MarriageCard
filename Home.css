@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Heading";
+    src: url("FORTQUINSY.otf");
+}
+.WedInv {
+    text-align: center;
+    font-family: 'Heading';
+    font-weight: ;
+}
+.CoupleImg {
+    text-align: center;
+}
+.CoupleImg img {
+    margin: 0 auto;
+    
+}
+@font-face {
+    font-family: "CoupleNames";
+    src: url("LoveaHegena-yw1YM.otf");
+}
+.CoupleImg h3{
+    font-family: 'CoupleNames';
+    font-size: 400%;
+    margin-top: -2%;
+    text-wrap:nowrap;
+}
+.buttons {
+    text-align: center;
+    margin-top: 2%;
+    z-index: 100;
+
+}
+.buttons button {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.btn.custom-pink {
+    color: #f41b88 !important; /* Pink color code */
+    border-color: #f41b88 !important; /* Border color same as the text color */
+}
+
+.btn.custom-pink:hover {
+    color: #000000 !important; /* Text color on hover */
+    background-color: #fb3598 !important; /* Background color on hover */
+}
+
+
+@font-face {
+    font-family: 'Name';
+    src: url('Ba.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SO';
+    src: url('Countryside-YdKj.ttf') format('truetype');
+}
+.Details {
+    text-align: center;
+    margin-top: 2%;
+}
+.Details #Name {
+    font-size: 300%;
+    font-family: 'Name';
+}
+.Details #SODO, #Place{
+    font-size: 100%;
+    font-family: "SO";
+}
+.Divider {
+    
+    text-align: center;
+    
+}
+body {
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    padding: 30px;
+  }
+.Divider img{
+    margin-top: 0px;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    top: 0%;
+}
+.body1 {
+    min-height: 5vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.slider {
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+.slide-track {
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px*10));
+    }
+}
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.slide img {
+    width: 100%;
+    transition: transform 1s;
+}
+.slide img:hover {
+    transform: translateZ(20px);
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right,rgba(255,255,255,1)0%, rgba(255,255,255,0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+@font-face {
+    font-family: 'Title';
+    src: url('Amsterdam Personal Use.ttf') format('truetype');
+}
+.BlockTitle {
+    font-family: Title;
+    font-size: 20px;
+}
+.body2 {
+    text-align: center;
+}
+.body2 img{
+    width: 250px;
+    margin-bottom: -30px;
+}
+.body2 h3 {
+    font-family: Name;
+}
+a {
+    text-decoration: none !important;
+    color: white !important;
+}

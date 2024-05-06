@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event to Google Calendar</title>
+</head>
+<body>
+    <h1>Add Event to Google Calendar</h1>
+    <button onclick="addToGoogleCalendar()">Add to Google Calendar</button>
+
+    <script>
+        function addToGoogleCalendar() {
+            // Generate the iCalendar formatted event
+            const event = {
+                title: 'RameshBhavani Marriage',
+                description: 'We should attend',
+                location: '10-4-1/1/7F, Ex Service Men Colony, Mehdipatnam, Hyderabad, Telangana 500028',
+                startDateTime: '2024-05-06T09:00:00', // Replace with your start date and time in YYYY-MM-DDTHH:MM:SS format
+                endDateTime: '2024-05-06T10:00:00' // Replace with your end date and time in YYYY-MM-DDTHH:MM:SS format
+            };
+
+            // Encode the event as a URI component
+            const encodedEvent = encodeURIComponent(`
+                rrrrs
+                DTSTART:${event.startDateTime}
+                DTEND:${event.endDateTime}
+                SUMMARY:${event.title}
+                DESCRIPTION:${event.description}
+                LOCATION:${event.location}
+                END:VEVENT
+                END:VCALENDAR
+            `);
+
+            // Generate the Google Calendar link
+            const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodedEvent}`;
+
+            // Open the Google Calendar link in a new tab
+            window.open(googleCalendarLink, '_blank');
+        }
+    </script>
+</body>
+</html>
