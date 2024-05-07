@@ -73,6 +73,7 @@
 body {
     /* background-image: linear-gradient(to bottom right, red, yellow); */
     padding: 30px;
+    text-align: center;
   }
 .Divider img{
     margin-top: 0px;
