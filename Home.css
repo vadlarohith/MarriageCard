@@ -8,10 +8,15 @@
     font-weight: ;
 }
 .CoupleImg {
+    left: 0 auto;
     text-align: center;
+
 }
 .CoupleImg img {
-    margin: 0 auto;
+    /* display: block;
+    margin: 0;
+    margin-right: 200px; */
+    width: 300px;
     
 }
 @font-face {
@@ -22,6 +27,7 @@
     font-family: 'CoupleNames';
     font-size: 400%;
     margin-top: -2%;
+    text-align: center;
     text-wrap:nowrap;
 }
 .buttons {
@@ -72,8 +78,9 @@
 }
 body {
     /* background-image: linear-gradient(to bottom right, red, yellow); */
-    padding: 30px;
-    text-align: center;
+    /* padding: 30px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 .Divider img{
     margin-top: 0px;
@@ -168,4 +175,11 @@ body {
 a {
     text-decoration: none !important;
     color: white !important;
+}
+.body3 {
+    text-align: center;
+}
+.body3 img{
+    width: 40px;
+    border-radius: 10px;
 }
